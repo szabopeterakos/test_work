@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/arquillianTEST.iml" filepath="$PROJECT_DIR$/.idea/modules/arquillianTEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/arquillianTEST_main.iml" filepath="$PROJECT_DIR$/.idea/modules/arquillianTEST_main.iml" group="arquillianTEST" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/arquillianTEST_test.iml" filepath="$PROJECT_DIR$/.idea/modules/arquillianTEST_test.iml" group="arquillianTEST" />
+    </modules>
+  </component>
+</project>
