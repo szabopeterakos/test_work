@@ -41,6 +41,7 @@ public class BeanTest {
     public void TestConnectionDeeper() {
         wonderBean.addWonder(new Wonder("one"));
         wonderBean.addWonder(new Wonder("two"));
+        
         Assert.assertEquals(store.getWonderList().size(), 2);
 
         wondersRandomiser.WonderListFillWithRandomLong(store.getWonderList());
