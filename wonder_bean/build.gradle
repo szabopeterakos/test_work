@@ -10,5 +10,15 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'javax', name: 'javaee-api', version: '8.0'
+    compile group: 'jaxen', name: 'jaxen', version: '1.1.6'
+
+    testCompile(group: 'org.jboss.arquillian', name: 'arquillian-bom', version: '1.4.0.Final', ext: 'pom')
+    testCompile(group: 'org.jboss.arquillian.junit', name: 'arquillian-junit-container', version: '1.4.0.Final')
+    testCompile(group: 'org.jboss.arquillian.extension', name: 'arquillian-rest-client-impl-jersey', version: '1.0.0.Alpha3')
+
+    testRuntime group: 'org.jboss.arquillian.container', name: 'arquillian-glassfish-embedded-3.1', version: '1.0.2'
+    testRuntime group: 'org.glassfish.main.extras', name: 'glassfish-embedded-all', version: '5.0'
+
 }
