@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group 'com.arquillian-mock-gradle'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://repo.spring.io/plugins-release/"
+    }
+}
+
+dependencies {
+    compile "org.jboss.arquillian:arquillian-bom:1.1.5.Final"
+    compile "org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.1.Final"
+    compile "org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final"
+    compile "org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.1.Final"
+    compile "org.jboss.spec.javax.faces:jboss-jsf-api_2.2_spec:2.2.6"
+    testCompile "javax.enterprise:cdi-api:1.2"
+    compile "javax.enterprise:cdi-api:1.2"
+    testCompile "junit:junit:4.12"
+    testCompile "org.jboss.arquillian.junit:arquillian-junit-container:1.1.11.Final"
+    testCompile "org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-depchain:2.0.0"
+    compile "org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:2.2.0-beta-1"
+    testCompile "xalan:serializer:2.7.1"
+    compile "org.mockito:mockito-all:1.10.8"
+    testCompile "org.jboss.arquillian.extension:arquillian-extension-byteman:1.0.0.Alpha3"
+    testCompile "org.jboss.byteman:byteman:2.2.0.1"
+    testCompile "org.jboss.byteman:byteman-submit:2.2.0.1"
+    testCompile "org.wildfly:wildfly-arquillian-container-managed:8.2.1.Final"
+
+
+    compile group: 'org.jboss.osgi.metadata', name: 'jbosgi-metadata', version: '3.0.1.Final'
+
+
+}
